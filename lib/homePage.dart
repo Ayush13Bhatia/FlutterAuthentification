@@ -12,7 +12,9 @@ class HomePage extends StatelessWidget {
           color: Colors.deepOrangeAccent,
           child: Text("Logout"),
           onPressed: () {
+            // LogOut Button
             auth.signOut();
+
             Navigator.of(context).pushReplacement(
                 MaterialPageRoute(builder: (context) => LogInPage()));
           },
